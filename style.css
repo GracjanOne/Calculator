@@ -1,0 +1,13 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  #elements-container{
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  #result{
+    height: 10vw;
+    width: 10vw;
+  }
