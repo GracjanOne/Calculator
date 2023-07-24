@@ -11,3 +11,9 @@ html {
     height: 10vw;
     width: 10vw;
   }
+  #whole-operation{
+    height: 1.2vw;
+    width: 10vw;
+    color: gray;
+    font-size: 1vw;
+  }
