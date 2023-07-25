@@ -1,12 +1,4 @@
-/* BUGI
 
-*/
-/* TODO 
-
--Dodanie oprawy graficznej
--Rozwinięcie liczb po przecinku
--Zaokrąglenie liczby za pomocą round
-*/
 const buttons = document.querySelectorAll(".numbers");
 const operators = document.querySelectorAll(".operators");
 const resultPlace = document.querySelector("#result");
@@ -23,7 +15,6 @@ let percentOperation = 0;
 let isPercentClicked = false;
 let result;
 let operation = [];
-
 let targetedOperation = "";
 let operator = "";
 let i = 0;
@@ -88,6 +79,7 @@ submit.addEventListener("click", function () {
 
   history.innerHTML += targetedOperation + "=" + result;
   history.innerHTML += "<br>";
+  
 });
 clearHistory.addEventListener("click", function () {
   history.innerHTML = "Historia" + "<br>";
