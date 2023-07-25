@@ -1,19 +1,75 @@
 html {
     height: 100%;
     width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
   }
   #elements-container{
     display: grid;
     grid-template-columns: 10% 10% 10% 10%;
     grid-template-rows: 20% 20% 20% 20% 20%;
+    gap: 1vw 5vw;
   }
   #result{
     height: 10vw;
     width: 10vw;
+    font-size: 2vw;
   }
   #whole-operation{
     height: 1.2vw;
     width: 10vw;
-    color: gray;
+    color: #B3AF8F;
     font-size: 1vw;
+  }
+  #operations-history{
+    z-index: 10000;
+    width: 5vw;
+    height: 6.5vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color: black;
+    float: right;
+    position: relative;
+    left: 2%;
+    font-size: 0.8vw;
+  }
+  #calculator{
+    width: 37vw;
+    height: 50vw;
+    background-color: #2B3A67;
+    border-radius: 1vw;
+  }
+  section{
+    display: flex;
+    justify-content: center;
+  }
+  #section-container{
+    width: 30vw;
+    height: 6vw;
+    background-color: #66999B;
+    z-index: 1000;
+    margin-bottom: 2vw;
+    position: relative;
+    left: 7%;
+    top: 3%;
+    border-radius: 1vw;
+    padding: 1vw;
+  }
+  #result{
+    color: #2B3A67;
+  }
+  .operator{
+    z-index: 100000;
+    cursor: pointer;
+    background-color: #FFC482;
+    border: none;
+    border-radius: 1vw;
+    width: 5.5vw;
+    height: 5.5vw;
+    color: #2B3A67;
+    margin-left: 2.7vw;
+    font-size: 1vw;
+    margin-top: 0.8vw;
+  }
+  .operator:hover{
+    background-color: #66999B;
   }
